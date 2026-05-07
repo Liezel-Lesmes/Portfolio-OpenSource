@@ -58,14 +58,17 @@ h2{
     text-align: center;
 }
 
-.skills span{
-    display: inline-block;
-    background-color: #222;
-    color: white;
+.skills span {
+    background-color: #ffb7d5; /* Soft Pink background */
+    color: #121212; /* Dark text para mabasa sa pink */
     padding: 8px 15px;
-    margin: 5px;
     border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
+
 
 /* PROJECTS */
 .projects{
