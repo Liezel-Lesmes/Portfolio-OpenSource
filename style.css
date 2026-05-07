@@ -13,8 +13,8 @@ body{
 
 /* HERO SECTION */
 .hero{
-    background-color: #222;
-    color: white;
+    background-color: #1a1a1a;
+    color: #ffb7d5;
     text-align: center;
     padding: 50px 20px;
 }
