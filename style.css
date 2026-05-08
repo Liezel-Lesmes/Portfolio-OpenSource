@@ -1,31 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-body{
-    font-family: Arial, sans-serif;
+body {
     background-color: #121212;
-    color: #ffb7d5;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* HERO SECTION */
-.hero{
+nav {
     background-color: #1a1a1a;
-    color: #ffb7d5;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ffb7d5;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.profile-pic{
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffb7d5;
+    text-shadow: 0 0 8px #ffb7d5;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #121212);
+}
+
+.profile-pic {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffb7d5;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h1, h2, h3 {
+    color: #ffb7d5;
+}
+
+.about, .projects {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills span {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #ffb7d5;
+    border: 1px solid #ffb7d5;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #ffb7d5;
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-top: 1px solid #ffb7d5;
+    margin-top: 50px;
+    font-size: 0.8rem;
+}
+
     border-radius: 50%;
     margin-bottom: 15px;
 }
