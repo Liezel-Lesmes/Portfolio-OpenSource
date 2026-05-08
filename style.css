@@ -17,7 +17,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #ffb7d5;
+    border-bottom: 1px solid #333;
     text-align: center;
 }
 
@@ -27,6 +27,69 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #121212;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+.about, .projects {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #121212;
+}
+
+.skills span {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #121212;
+    color: #ffffff;
+    border-top: 1px solid #333;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+;
     font-size: 0.8rem;
     transition: 0.3s;
 }
