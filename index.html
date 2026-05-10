@@ -5,6 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .animate-text {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .animate-profile {
+        animation: fadeInUp 1.2s ease-out forwards, floating 3s ease-in-out infinite;
+    }
+</style>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,8 +47,8 @@
     <section id="hero" style="padding: 60px 20px; text-align: left; background: #000; color: #fff;">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: auto;">
         <div>
-            <h1 style="font-size: 3rem; margin-bottom: 10px;">Hello,</h1>
-            <h2 style="font-size: 1.5rem; color: #ccc;">I'm Liezel Lesmes</h2>
+            <h1 class="animate-text" style="font-size: 3rem; margin-bottom: 10px; color: #ffffff !important;">Hello,</h1>
+<h2 class="animate-text" style="font-size: 1.5rem; color: #ccc; animation-delay: 0.2s;">I'm Liezel Lesmes</h2>
             <p style="margin: 20px 0; color: #aaa;">2nd Year IT Student | Aspiring Developer & Business Owner</p>
             
             <p style="font-size: 0.9rem; margin-bottom: 10px;">Skills & Tools that I use:</p>
@@ -37,7 +64,7 @@
         </div>
         
         <div style="flex-shrink: 0;">
-            <img src="IMG_20260108_075749.jpg" alt="Liezel" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #fff; object-fit: cover;">
+            <img class="animate-profile" src="IMG_20260108_075749.jpg" alt="Liezel" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #fff; object-fit: cover;">
         </div>
     </div>
 </section>
